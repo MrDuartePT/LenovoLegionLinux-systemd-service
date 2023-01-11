@@ -1,0 +1,12 @@
+[Unit]
+Description=Apply Fan Curve to Lenovo Legion Laptop depending of Power State and Charger Mode (LenovoLegionLinux kernel Module)
+DefaultDependencies=no
+StopWhenUnneeded=yes
+
+[Service]
+Type=exec
+ExecStart=/home/mrduarte/.config/lenovo-fan-control/fancurve-set.sh
+
+[Install]
+WantedBy=multi-user.target
+
