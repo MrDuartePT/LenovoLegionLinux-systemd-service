@@ -2,11 +2,11 @@
 
 USER=$(whoami)
 
-#mkdir .config/lenovo-fan-control
+mkdir .config/lenovo-fan-control
 
 sed -i "s/user_name/$USER/g" "lenovo-fancurve.service"
 
-#cp *.sh .config/lenovo-fan-control
+cp *.sh .config/lenovo-fan-control
 
 if ! type "$foobar_doas" > /dev/null; then
   Sudo=doas
