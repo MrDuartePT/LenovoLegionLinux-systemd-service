@@ -5,7 +5,7 @@ StopWhenUnneeded=yes
 
 [Service]
 Type=exec
-ExecStart=/home/mrduarte/.config/lenovo-fan-control/fancurve-set.sh
+ExecStart=/home/user_name/.config/lenovo-fan-control/fancurve-set.sh
 
 [Install]
 WantedBy=multi-user.target

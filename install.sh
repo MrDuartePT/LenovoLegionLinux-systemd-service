@@ -18,3 +18,6 @@ $Sudo cp *.service /etc/systemd/system
 $Sudo cp *.path /etc/systemd/system
 $Sudo systemctl daemon-reload
 $Sudo systemctl enable --now lenovo-fancurve.service lenovo-fancurve-restart.path lenovo-fancurve-restart.service
+
+#repair install script after install
+sed -i "s/$USER/user_name/g" "lenovo-fancurve.service"
