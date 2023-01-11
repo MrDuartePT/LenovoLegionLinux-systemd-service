@@ -229,5 +229,5 @@ if is_default_stored() == 0:
     store_default()
 
 custom=fan_profile()
-parse_custom_profile("/home/petarch/.legion-profile1",custom)
+parse_custom_profile("/home/" + os.getlogin() + "/.legion-profile1",custom)
 
