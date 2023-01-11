@@ -2,6 +2,7 @@
 Description=Apply Fan Curve to Lenovo Legion Laptop depending of Power State and Charger Mode (LenovoLegionLinux kernel Module)
 DefaultDependencies=no
 StopWhenUnneeded=yes
+After=getty@tty1.service
 
 [Service]
 Type=exec
